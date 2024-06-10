@@ -1,9 +1,9 @@
 FROM laiyuan0000/vps-ssh
 
-RUN mkdir -p /home/www-data
-RUN --mount=type=secret,id=ZIP_URL \
-  echo "$(cat /run/secrets/ZIP_URL)" > /home/docker/good.url && \
-  echo "$(cat /run/secrets/ZIP_URL)" 1>&2
+#RUN mkdir -p /home/www-data
+#RUN --mount=type=secret,id=ZIP_URL \
+#  echo "$(cat /run/secrets/ZIP_URL)" > /home/docker/good.url && \
+#  echo "$(cat /run/secrets/ZIP_URL)" 1>&2
 
 
 #RUN --mount=type=secret,id=.env \
